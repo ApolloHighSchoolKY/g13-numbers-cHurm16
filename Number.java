@@ -45,9 +45,10 @@ public class Number
 		//A perfect number is any number equal to the sum of its divisors
 		//excluding itself.
 		for(int i = 1; i<getNumber(); i++)
-			if(getNumber()%i ==0)
-				total += 1;
-		return (number==total);
+			if(getNumber()%i==0)
+				total += i;
+
+		return(number==total);
 	}
 
 	public String toString( )
@@ -59,6 +60,8 @@ public class Number
 		returnString += number + " isOdd == " + isOdd() + "\n";
 		returnString += number + " isPerfect == " + isPerfect() + "\n\n";
 
-		return "" + returnString;
+		//return "" + returnString;
+
+		return "" + number;
 	}
 }
